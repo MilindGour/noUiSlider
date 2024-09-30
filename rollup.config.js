@@ -5,7 +5,7 @@ export default {
     output: [
         {
             file: 'dist/nouislider.js',
-            format: 'umd',
+            format: 'es',
             name: 'noUiSlider',
             exports: 'named'
         },

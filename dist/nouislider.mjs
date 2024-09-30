@@ -50,7 +50,7 @@ function offset(elem, orientation) {
     var pageOffset = getPageOffset(doc);
     // getBoundingClientRect contains left scroll in Chrome on Android.
     // I haven't found a feature detection that proves this. Worst case
-    // scenario on mis-match: the 'tap' feature on horizontal sliders breaks.
+    // scenario on mismatch: the 'tap' feature on horizontal sliders breaks.
     if (/webkit.*Chrome.*Mobile/i.test(navigator.userAgent)) {
         pageOffset.x = 0;
     }
@@ -406,7 +406,7 @@ var Spectrum = /** @class */ (function () {
     };
     Spectrum.prototype.handleEntryPoint = function (index, value) {
         var percentage;
-        // Covert min/max syntax to 0 and 100.
+        // Convert min/max syntax to 0 and 100.
         if (index === "min") {
             percentage = 0;
         }
